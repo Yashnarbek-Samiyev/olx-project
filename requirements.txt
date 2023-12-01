@@ -1,0 +1,5 @@
+Django==3.2.9
+djangorestframework==3.12.4
+django-modeltranslation==0.16.0
+pip freeze > requirements.txt
+Pillow==8.4.0
