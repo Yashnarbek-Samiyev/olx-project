@@ -37,7 +37,7 @@ The OLX Project is an online marketplace where users can buy and sell various pr
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/olx-project.git
+   https://github.com/Yashnarbek-Samiyev/olx-project.git
     ```
 
 2. Install dependencies:
