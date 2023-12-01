@@ -4,16 +4,6 @@ from django.contrib.auth.models import User
 from modeltranslation.translator import TranslationOptions, register
 
 
-class Product(models.Model):
-    title = models.CharField(max_length=255)
-    description = models.TextField()
-
-
-@register(Product)
-class ProductTranslationOptions(TranslationOptions):
-    fields = ('title', 'description')
-
-
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
@@ -45,6 +35,7 @@ class Product(models.Model):
         return self.title
 
 
+@register(Product)
 class Transaction(models.Model):
     buyer = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='buyer_transactions')
